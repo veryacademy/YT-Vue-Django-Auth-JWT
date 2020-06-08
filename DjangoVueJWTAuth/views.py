@@ -10,7 +10,7 @@ class PostsView(generics.RetrieveAPIView):
     # permission_classes = (IsAuthenticated,)  
 
     def get_queryset(self):
-        return Posts.objects.all()  
+        Posts.objects.all()  
 
     def get(self, request, *args, **kwargs):
         queryset = self.get_queryset()
